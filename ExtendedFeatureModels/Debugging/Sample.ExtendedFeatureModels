@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<exampleModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="cf5b1761-324b-4d95-aa47-e8b211c2cb2f" xmlns="http://schemas.microsoft.com/dsltools/ExtendedFeatureModels">
+<featureModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="21496d32-7b79-4373-a685-347f2d4cf4a8" xmlns="http://schemas.microsoft.com/dsltools/ExtendedFeatureModels">
   <elements>
-    <exampleElement Id="6ed9c4cc-76a4-41a7-90a0-7cf812b5349b" name="ExampleElement1">
+    <feature Id="17d2afef-6044-4652-9b41-14b6f95b9e68" name="Root module" isRoot="true">
       <targets>
-        <exampleElementMoniker name="/cf5b1761-324b-4d95-aa47-e8b211c2cb2f/ExampleElement2" />
+        <featureMoniker name="/21496d32-7b79-4373-a685-347f2d4cf4a8/Module 1" />
+        <featureMoniker name="/21496d32-7b79-4373-a685-347f2d4cf4a8/Module 2" />
       </targets>
-    </exampleElement>
-    <exampleElement Id="3a63d3de-1702-431f-acb2-aff6c5ea4ee3" name="ExampleElement2" />
+    </feature>
+    <feature Id="326bc0ec-d71b-4be3-82d2-866a15050ede" name="Module 1" isRoot="false" />
+    <feature Id="d2738d19-d3df-4388-9361-2b1eb0aa913b" name="Module 2" isRoot="false" />
   </elements>
-</exampleModel>
+</featureModel>

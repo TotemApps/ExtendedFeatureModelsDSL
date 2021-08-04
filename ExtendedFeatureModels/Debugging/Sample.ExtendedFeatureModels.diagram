@@ -1,18 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <extendedFeatureModelsDiagram dslVersion="1.0.0.0" Id="2531cc03-34aa-44a1-a38a-e0ad42179e65" absoluteBounds="0, 0, 11, 8.5" name="Sample">
-  <exampleModelMoniker Id="cf5b1761-324b-4d95-aa47-e8b211c2cb2f" />
+  <featureModelMoniker Id="21496d32-7b79-4373-a685-347f2d4cf4a8" />
   <nestedChildShapes>
-    <exampleShape Id="ae40042d-09e1-437e-b44a-2d9c98b7bf73" absoluteBounds="0.5, 1.75, 2, 0.75">
-      <exampleElementMoniker name="/cf5b1761-324b-4d95-aa47-e8b211c2cb2f/ExampleElement1" />
-    </exampleShape>
-    <exampleShape Id="7c01c8b8-7491-4707-a214-8f531c5ea72c" absoluteBounds="3, 0.5, 2, 0.75">
-      <exampleElementMoniker name="/cf5b1761-324b-4d95-aa47-e8b211c2cb2f/ExampleElement2" />
-    </exampleShape>
-    <exampleConnector Id="2c6ea27a-05eb-4802-be49-46e430af8532" edgePoints="[(1.5 : 1.75); (1.5 : 0.875); (3 : 0.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="2b82ead4-1f7a-40d7-9fd9-7d5ff53ba244">
+    <featureShape Id="bdca30e4-db8c-445f-b1f8-fd5ee704ed92" absoluteBounds="5.25, 1.25, 2, 0.75">
+      <featureMoniker name="/21496d32-7b79-4373-a685-347f2d4cf4a8/Root module" />
+    </featureShape>
+    <featureShape Id="de239747-2923-40a0-9531-6e2e96fb91f0" absoluteBounds="3, 4.5, 2, 0.75">
+      <featureMoniker name="/21496d32-7b79-4373-a685-347f2d4cf4a8/Module 1" />
+    </featureShape>
+    <featureConnector Id="0b76f438-4232-4cf2-8548-3855307285da" edgePoints="[(5.53387214898514 : 2); (4.07697740112994 : 4.5)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="2b82ead4-1f7a-40d7-9fd9-7d5ff53ba244">
       <nodes>
-        <exampleShapeMoniker Id="ae40042d-09e1-437e-b44a-2d9c98b7bf73" />
-        <exampleShapeMoniker Id="7c01c8b8-7491-4707-a214-8f531c5ea72c" />
+        <featureShapeMoniker Id="bdca30e4-db8c-445f-b1f8-fd5ee704ed92" />
+        <featureShapeMoniker Id="de239747-2923-40a0-9531-6e2e96fb91f0" />
       </nodes>
-    </exampleConnector>
+    </featureConnector>
+    <featureShape Id="ff51aac1-f582-4ff7-b3f4-2199c8735d98" absoluteBounds="8.125, 4.625, 2, 0.75">
+      <featureMoniker name="/21496d32-7b79-4373-a685-347f2d4cf4a8/Module 2" />
+    </featureShape>
+    <featureConnector Id="e33fc1b6-d3ee-451a-8f98-0f460e00f91b" edgePoints="[(6.65572174262196 : 2); (9.23634812286689 : 4.625)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="2b82ead4-1f7a-40d7-9fd9-7d5ff53ba244">
+      <nodes>
+        <featureShapeMoniker Id="bdca30e4-db8c-445f-b1f8-fd5ee704ed92" />
+        <featureShapeMoniker Id="ff51aac1-f582-4ff7-b3f4-2199c8735d98" />
+      </nodes>
+    </featureConnector>
   </nestedChildShapes>
 </extendedFeatureModelsDiagram>
