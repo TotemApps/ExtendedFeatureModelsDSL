@@ -108,6 +108,8 @@
         <xsd:attribute name="name" type="xsd:string" use="required" />
         <!-- Property: IsRoot -->
         <xsd:attribute name="isRoot" type="xsd:boolean" />
+        <!-- Property: Selected -->
+        <xsd:attribute name="selected" type="xsd:boolean" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>

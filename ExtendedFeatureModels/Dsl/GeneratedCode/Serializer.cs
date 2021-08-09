@@ -959,6 +959,23 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 					}
 				}
 			}
+			// Selected
+			if (!serializationContext.Result.Failed)
+			{
+				string attribSelected = ExtendedFeatureModelsSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "selected");
+				if (attribSelected != null)
+				{
+					global::System.Boolean valueOfSelected;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Boolean>(serializationContext, attribSelected, out valueOfSelected))
+					{
+						instanceOfFeature.Selected = valueOfSelected;
+					}
+					else
+					{	// Invalid property value, ignored.
+						ExtendedFeatureModelsSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "selected", typeof(global::System.Boolean), attribSelected);
+					}
+				}
+			}
 		}
 	
 		/// <summary>
@@ -1480,6 +1497,19 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "False") != 0)
 					{	// No need to write the value out if it's the same as default value.
 						ExtendedFeatureModelsSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "isRoot", serializedPropValue);
+					}
+				}
+			}
+			// Selected
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.Boolean propValue = instanceOfFeature.Selected;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Boolean>(serializationContext, propValue);
+				if (!serializationContext.Result.Failed)
+				{
+					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, string.Empty) != 0)
+					{	// No need to write the value out if it's the same as default value.
+						ExtendedFeatureModelsSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "selected", serializedPropValue);
 					}
 				}
 			}

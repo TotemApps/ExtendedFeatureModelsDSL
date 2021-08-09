@@ -157,6 +157,14 @@
     <value>Is Root</value>
     <comment>DisplayName for DomainProperty &apos;IsRoot&apos; on DomainClass &apos;Feature&apos;</comment>
   </data>
+  <data name="jsoto0025.SplModeling.ExtendedFeatureModels.Feature/Selected.Description" xml:space="preserve">
+    <value>Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Selected</value>
+    <comment>Description for DomainProperty &apos;Selected&apos; on DomainClass &apos;Feature&apos;</comment>
+  </data>
+  <data name="jsoto0025.SplModeling.ExtendedFeatureModels.Feature/Selected.DisplayName" xml:space="preserve">
+    <value>Selected</value>
+    <comment>DisplayName for DomainProperty &apos;Selected&apos; on DomainClass &apos;Feature&apos;</comment>
+  </data>
   <data name="jsoto0025.SplModeling.ExtendedFeatureModels.FeatureModelHasElements.Description" xml:space="preserve">
     <value>Embedding relationship between the Model and Elements</value>
     <comment>Description for DomainClass &apos;FeatureModelHasElements&apos;</comment>
@@ -402,6 +410,10 @@ A DomainClass can be serialized as a moniker only if
     <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FeatureShapeSelectedDecoratorDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\..\..\..\..\..\datos\Creative Cloud Files\VariamosExtended\Feature Models\32w\SelectedIcon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
   <data name="FeatureElementToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\resources\exampleshapetoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>

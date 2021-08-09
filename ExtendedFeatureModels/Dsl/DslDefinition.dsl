@@ -27,6 +27,11 @@
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="4f41fddc-a8d9-49a0-a373-0763a26a0fea" Description="Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Selected" Name="Selected" DisplayName="Selected" DefaultValue="">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
       </Properties>
     </DomainClass>
   </Classes>
@@ -87,6 +92,9 @@
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="NameDecorator" DisplayName="Name Decorator" DefaultText="NameDecorator" />
       </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <IconDecorator Name="SelectedDecorator" DisplayName="Selected Decorator" DefaultIcon="D:\datos\Creative Cloud Files\VariamosExtended\Feature Models\32w\SelectedIcon.png" />
+      </ShapeHasDecorators>
     </GeometryShape>
   </Shapes>
   <Connectors>
@@ -113,6 +121,9 @@
           </XmlRelationshipData>
           <XmlPropertyData XmlName="isRoot">
             <DomainPropertyMoniker Name="Feature/IsRoot" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="selected">
+            <DomainPropertyMoniker Name="Feature/Selected" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -173,6 +184,12 @@
               <DomainPropertyMoniker Name="Feature/Name" />
             </PropertyPath>
           </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <IconDecoratorMoniker Name="FeatureShape/SelectedDecorator" />
+          <VisibilityPropertyPath>
+            <DomainPropertyMoniker Name="Feature/Selected" />
+          </VisibilityPropertyPath>
         </DecoratorMap>
         <GeometryShapeMoniker Name="FeatureShape" />
       </ShapeMap>

@@ -232,6 +232,9 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 				
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::jsoto0025.SplModeling.ExtendedFeatureModels.Feature.NameDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "NameDecorator").AssociateValueWith(shape.Store, propertyInfo);
+		
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::jsoto0025.SplModeling.ExtendedFeatureModels.Feature.SelectedDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "SelectedDecorator").AssociateVisibilityWith(shape.Store, propertyInfo);
 			}
 		}
 		

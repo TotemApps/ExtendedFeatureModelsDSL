@@ -377,6 +377,93 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 		}
 		
 		#endregion
+		#region Selected domain property code
+		
+		/// <summary>
+		/// Selected domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid SelectedDomainPropertyId = new global::System.Guid(0x4f41fddc, 0xa8d9, 0x49a0, 0xa3, 0x73, 0x07, 0x63, 0xa2, 0x6a, 0x0f, 0xea);
+		
+		/// <summary>
+		/// Storage for Selected
+		/// </summary>
+		private global::System.Boolean selectedPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of Selected domain property.
+		/// Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Selected
+		/// </summary>
+		[DslDesign::DisplayNameResource("jsoto0025.SplModeling.ExtendedFeatureModels.Feature/Selected.DisplayName", typeof(global::jsoto0025.SplModeling.ExtendedFeatureModels.ExtendedFeatureModelsDomainModel), "jsoto0025.SplModeling.ExtendedFeatureModels.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("jsoto0025.SplModeling.ExtendedFeatureModels.Feature/Selected.Description", typeof(global::jsoto0025.SplModeling.ExtendedFeatureModels.ExtendedFeatureModelsDomainModel), "jsoto0025.SplModeling.ExtendedFeatureModels.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("4f41fddc-a8d9-49a0-a373-0763a26a0fea")]
+		public global::System.Boolean Selected
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return selectedPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				SelectedPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Feature.Selected domain property.
+		/// </summary>
+		internal sealed partial class SelectedPropertyHandler : DslModeling::DomainPropertyValueHandler<Feature, global::System.Boolean>
+		{
+			private SelectedPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Feature.Selected domain property value handler.
+			/// </summary>
+			public static readonly SelectedPropertyHandler Instance = new SelectedPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Feature.Selected domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return SelectedDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Boolean GetValue(Feature element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.selectedPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Feature element, global::System.Boolean newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Boolean oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.selectedPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
 		#region FeatureModel opposite domain role accessor
 		/// <summary>
 		/// Gets or sets FeatureModel.

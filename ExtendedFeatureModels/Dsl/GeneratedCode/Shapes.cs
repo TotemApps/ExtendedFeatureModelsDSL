@@ -186,6 +186,10 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 			field1.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
 			shapeFields.Add(field1);
 			
+			DslDiagrams::ImageField field2 = new DslDiagrams::ImageField("SelectedDecorator");
+			field2.DefaultImage = DslDiagrams::ImageHelper.GetImage(global::jsoto0025.SplModeling.ExtendedFeatureModels.ExtendedFeatureModelsDomainModel.SingletonResourceManager.GetObject("FeatureShapeSelectedDecoratorDefaultImage"));
+			shapeFields.Add(field2);
+			
 		}
 		
 		/// <summary>
@@ -200,6 +204,10 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 			DslDiagrams::ShapeField field1 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "NameDecorator");
 			DslDiagrams::Decorator decorator1 = new DslDiagrams::ShapeDecorator(field1, DslDiagrams::ShapeDecoratorPosition.Center, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator1);
+				
+			DslDiagrams::ShapeField field2 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "SelectedDecorator");
+			DslDiagrams::Decorator decorator2 = new DslDiagrams::ShapeDecorator(field2, DslDiagrams::ShapeDecoratorPosition.InnerTopLeft, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator2);
 				
 		}
 		
