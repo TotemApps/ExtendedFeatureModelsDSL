@@ -190,6 +190,10 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 			field2.DefaultImage = DslDiagrams::ImageHelper.GetImage(global::jsoto0025.SplModeling.ExtendedFeatureModels.ExtendedFeatureModelsDomainModel.SingletonResourceManager.GetObject("FeatureShapeSelectedDecoratorDefaultImage"));
 			shapeFields.Add(field2);
 			
+			DslDiagrams::ImageField field3 = new DslDiagrams::ImageField("RootDecorator");
+			field3.DefaultImage = DslDiagrams::ImageHelper.GetImage(global::jsoto0025.SplModeling.ExtendedFeatureModels.ExtendedFeatureModelsDomainModel.SingletonResourceManager.GetObject("FeatureShapeRootDecoratorDefaultImage"));
+			shapeFields.Add(field3);
+			
 		}
 		
 		/// <summary>
@@ -206,8 +210,12 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 			decorators.Add(decorator1);
 				
 			DslDiagrams::ShapeField field2 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "SelectedDecorator");
-			DslDiagrams::Decorator decorator2 = new DslDiagrams::ShapeDecorator(field2, DslDiagrams::ShapeDecoratorPosition.InnerTopLeft, DslDiagrams::PointD.Empty);
+			DslDiagrams::Decorator decorator2 = new DslDiagrams::ShapeDecorator(field2, DslDiagrams::ShapeDecoratorPosition.InnerTopRight, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator2);
+				
+			DslDiagrams::ShapeField field3 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "RootDecorator");
+			DslDiagrams::Decorator decorator3 = new DslDiagrams::ShapeDecorator(field3, DslDiagrams::ShapeDecoratorPosition.InnerTopLeft, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator3);
 				
 		}
 		

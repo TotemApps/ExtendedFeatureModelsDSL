@@ -290,59 +290,59 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 		}
 		
 		#endregion
-		#region IsRoot domain property code
+		#region Root domain property code
 		
 		/// <summary>
-		/// IsRoot domain property Id.
+		/// Root domain property Id.
 		/// </summary>
-		public static readonly global::System.Guid IsRootDomainPropertyId = new global::System.Guid(0x8a896153, 0xb6f1, 0x478b, 0xa4, 0xc9, 0x21, 0xc4, 0x68, 0xf9, 0x66, 0xe5);
+		public static readonly global::System.Guid RootDomainPropertyId = new global::System.Guid(0x8a896153, 0xb6f1, 0x478b, 0xa4, 0xc9, 0x21, 0xc4, 0x68, 0xf9, 0x66, 0xe5);
 		
 		/// <summary>
-		/// Storage for IsRoot
+		/// Storage for Root
 		/// </summary>
-		private global::System.Boolean isRootPropertyStorage;
+		private global::System.Boolean rootPropertyStorage;
 		
 		/// <summary>
-		/// Gets or sets the value of IsRoot domain property.
-		/// Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Is Root
+		/// Gets or sets the value of Root domain property.
+		/// Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Root
 		/// </summary>
-		[DslDesign::DisplayNameResource("jsoto0025.SplModeling.ExtendedFeatureModels.Feature/IsRoot.DisplayName", typeof(global::jsoto0025.SplModeling.ExtendedFeatureModels.ExtendedFeatureModelsDomainModel), "jsoto0025.SplModeling.ExtendedFeatureModels.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("jsoto0025.SplModeling.ExtendedFeatureModels.Feature/IsRoot.Description", typeof(global::jsoto0025.SplModeling.ExtendedFeatureModels.ExtendedFeatureModelsDomainModel), "jsoto0025.SplModeling.ExtendedFeatureModels.GeneratedCode.DomainModelResx")]
+		[DslDesign::DisplayNameResource("jsoto0025.SplModeling.ExtendedFeatureModels.Feature/Root.DisplayName", typeof(global::jsoto0025.SplModeling.ExtendedFeatureModels.ExtendedFeatureModelsDomainModel), "jsoto0025.SplModeling.ExtendedFeatureModels.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("jsoto0025.SplModeling.ExtendedFeatureModels.Feature/Root.Description", typeof(global::jsoto0025.SplModeling.ExtendedFeatureModels.ExtendedFeatureModelsDomainModel), "jsoto0025.SplModeling.ExtendedFeatureModels.GeneratedCode.DomainModelResx")]
 		[DslModeling::DomainObjectId("8a896153-b6f1-478b-a4c9-21c468f966e5")]
-		public global::System.Boolean IsRoot
+		public global::System.Boolean Root
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return isRootPropertyStorage;
+				return rootPropertyStorage;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				IsRootPropertyHandler.Instance.SetValue(this, value);
+				RootPropertyHandler.Instance.SetValue(this, value);
 			}
 		}
 		/// <summary>
-		/// Value handler for the Feature.IsRoot domain property.
+		/// Value handler for the Feature.Root domain property.
 		/// </summary>
-		internal sealed partial class IsRootPropertyHandler : DslModeling::DomainPropertyValueHandler<Feature, global::System.Boolean>
+		internal sealed partial class RootPropertyHandler : DslModeling::DomainPropertyValueHandler<Feature, global::System.Boolean>
 		{
-			private IsRootPropertyHandler() { }
+			private RootPropertyHandler() { }
 		
 			/// <summary>
-			/// Gets the singleton instance of the Feature.IsRoot domain property value handler.
+			/// Gets the singleton instance of the Feature.Root domain property value handler.
 			/// </summary>
-			public static readonly IsRootPropertyHandler Instance = new IsRootPropertyHandler();
+			public static readonly RootPropertyHandler Instance = new RootPropertyHandler();
 		
 			/// <summary>
-			/// Gets the Id of the Feature.IsRoot domain property.
+			/// Gets the Id of the Feature.Root domain property.
 			/// </summary>
 			public sealed override global::System.Guid DomainPropertyId
 			{
 				[global::System.Diagnostics.DebuggerStepThrough]
 				get
 				{
-					return IsRootDomainPropertyId;
+					return RootDomainPropertyId;
 				}
 			}
 			
@@ -354,7 +354,7 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 			public override sealed global::System.Boolean GetValue(Feature element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.isRootPropertyStorage;
+				return element.rootPropertyStorage;
 			}
 		
 			/// <summary>
@@ -370,7 +370,7 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);
-					element.isRootPropertyStorage = newValue;
+					element.rootPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}

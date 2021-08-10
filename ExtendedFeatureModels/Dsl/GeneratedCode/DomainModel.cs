@@ -89,7 +89,7 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 			return new DomainMemberInfo[]
 			{
 				new DomainMemberInfo(typeof(Feature), "Name", Feature.NameDomainPropertyId, typeof(Feature.NamePropertyHandler)),
-				new DomainMemberInfo(typeof(Feature), "IsRoot", Feature.IsRootDomainPropertyId, typeof(Feature.IsRootPropertyHandler)),
+				new DomainMemberInfo(typeof(Feature), "Root", Feature.RootDomainPropertyId, typeof(Feature.RootPropertyHandler)),
 				new DomainMemberInfo(typeof(Feature), "Selected", Feature.SelectedDomainPropertyId, typeof(Feature.SelectedPropertyHandler)),
 			};
 		}

@@ -21,7 +21,7 @@
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="8a896153-b6f1-478b-a4c9-21c468f966e5" Description="Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Is Root" Name="IsRoot" DisplayName="Is Root" DefaultValue="False">
+        <DomainProperty Id="8a896153-b6f1-478b-a4c9-21c468f966e5" Description="Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Root" Name="Root" DisplayName="Root" DefaultValue="False">
           <Notes>Indicates if the Feature is the root of the model</Notes>
           <Type>
             <ExternalTypeMoniker Name="/System/Boolean" />
@@ -92,8 +92,11 @@
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="NameDecorator" DisplayName="Name Decorator" DefaultText="NameDecorator" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
         <IconDecorator Name="SelectedDecorator" DisplayName="Selected Decorator" DefaultIcon="D:\datos\Creative Cloud Files\VariamosExtended\Feature Models\32w\SelectedIcon.png" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <IconDecorator Name="RootDecorator" DisplayName="Root Decorator" DefaultIcon="D:\datos\Creative Cloud Files\VariamosExtended\Feature Models\32w\IsRoot.png" />
       </ShapeHasDecorators>
     </GeometryShape>
   </Shapes>
@@ -119,8 +122,8 @@
           <XmlRelationshipData RoleElementName="targets">
             <DomainRelationshipMoniker Name="FeatureReferencesTargets" />
           </XmlRelationshipData>
-          <XmlPropertyData XmlName="isRoot">
-            <DomainPropertyMoniker Name="Feature/IsRoot" />
+          <XmlPropertyData XmlName="root">
+            <DomainPropertyMoniker Name="Feature/Root" />
           </XmlPropertyData>
           <XmlPropertyData XmlName="selected">
             <DomainPropertyMoniker Name="Feature/Selected" />
@@ -189,6 +192,12 @@
           <IconDecoratorMoniker Name="FeatureShape/SelectedDecorator" />
           <VisibilityPropertyPath>
             <DomainPropertyMoniker Name="Feature/Selected" />
+          </VisibilityPropertyPath>
+        </DecoratorMap>
+        <DecoratorMap>
+          <IconDecoratorMoniker Name="FeatureShape/RootDecorator" />
+          <VisibilityPropertyPath>
+            <DomainPropertyMoniker Name="Feature/Root" />
           </VisibilityPropertyPath>
         </DecoratorMap>
         <GeometryShapeMoniker Name="FeatureShape" />

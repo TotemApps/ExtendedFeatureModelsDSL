@@ -149,13 +149,13 @@
     <value>Name</value>
     <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Feature&apos;</comment>
   </data>
-  <data name="jsoto0025.SplModeling.ExtendedFeatureModels.Feature/IsRoot.Description" xml:space="preserve">
-    <value>Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Is Root</value>
-    <comment>Description for DomainProperty &apos;IsRoot&apos; on DomainClass &apos;Feature&apos;</comment>
+  <data name="jsoto0025.SplModeling.ExtendedFeatureModels.Feature/Root.Description" xml:space="preserve">
+    <value>Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Root</value>
+    <comment>Description for DomainProperty &apos;Root&apos; on DomainClass &apos;Feature&apos;</comment>
   </data>
-  <data name="jsoto0025.SplModeling.ExtendedFeatureModels.Feature/IsRoot.DisplayName" xml:space="preserve">
-    <value>Is Root</value>
-    <comment>DisplayName for DomainProperty &apos;IsRoot&apos; on DomainClass &apos;Feature&apos;</comment>
+  <data name="jsoto0025.SplModeling.ExtendedFeatureModels.Feature/Root.DisplayName" xml:space="preserve">
+    <value>Root</value>
+    <comment>DisplayName for DomainProperty &apos;Root&apos; on DomainClass &apos;Feature&apos;</comment>
   </data>
   <data name="jsoto0025.SplModeling.ExtendedFeatureModels.Feature/Selected.Description" xml:space="preserve">
     <value>Description for jsoto0025.SplModeling.ExtendedFeatureModels.Feature.Selected</value>
@@ -412,6 +412,10 @@ A DomainClass can be serialized as a moniker only if
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="FeatureShapeSelectedDecoratorDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\..\..\..\..\..\datos\Creative Cloud Files\VariamosExtended\Feature Models\32w\SelectedIcon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="FeatureShapeRootDecoratorDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\..\..\..\..\..\datos\Creative Cloud Files\VariamosExtended\Feature Models\32w\IsRoot.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Icon decorator default image</comment>
   </data>
   <data name="FeatureElementToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">

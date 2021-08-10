@@ -942,20 +942,20 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 					}
 				}
 			}
-			// IsRoot
+			// Root
 			if (!serializationContext.Result.Failed)
 			{
-				string attribIsRoot = ExtendedFeatureModelsSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "isRoot");
-				if (attribIsRoot != null)
+				string attribRoot = ExtendedFeatureModelsSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "root");
+				if (attribRoot != null)
 				{
-					global::System.Boolean valueOfIsRoot;
-					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Boolean>(serializationContext, attribIsRoot, out valueOfIsRoot))
+					global::System.Boolean valueOfRoot;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Boolean>(serializationContext, attribRoot, out valueOfRoot))
 					{
-						instanceOfFeature.IsRoot = valueOfIsRoot;
+						instanceOfFeature.Root = valueOfRoot;
 					}
 					else
 					{	// Invalid property value, ignored.
-						ExtendedFeatureModelsSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "isRoot", typeof(global::System.Boolean), attribIsRoot);
+						ExtendedFeatureModelsSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "root", typeof(global::System.Boolean), attribRoot);
 					}
 				}
 			}
@@ -1487,16 +1487,16 @@ namespace jsoto0025.SplModeling.ExtendedFeatureModels
 					ExtendedFeatureModelsSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "name", propValue);
 				}
 			}
-			// IsRoot
+			// Root
 			if (!serializationContext.Result.Failed)
 			{
-				global::System.Boolean propValue = instanceOfFeature.IsRoot;
+				global::System.Boolean propValue = instanceOfFeature.Root;
 				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Boolean>(serializationContext, propValue);
 				if (!serializationContext.Result.Failed)
 				{
 					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "False") != 0)
 					{	// No need to write the value out if it's the same as default value.
-						ExtendedFeatureModelsSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "isRoot", serializedPropValue);
+						ExtendedFeatureModelsSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "root", serializedPropValue);
 					}
 				}
 			}
