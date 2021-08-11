@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extendedFeatureModelsDiagram dslVersion="1.0.0.0" Id="2531cc03-34aa-44a1-a38a-e0ad42179e65" absoluteBounds="0, 0, 11, 8.5" name="Sample">
+  <featureModelMoniker Id="21496d32-7b79-4373-a685-347f2d4cf4a8" />
+  <nestedChildShapes>
+    <featureShape Id="bdca30e4-db8c-445f-b1f8-fd5ee704ed92" absoluteBounds="5.625, 1.25, 2, 0.75">
+      <featureMoniker name="/21496d32-7b79-4373-a685-347f2d4cf4a8/Root module" />
+    </featureShape>
+    <featureShape Id="de239747-2923-40a0-9531-6e2e96fb91f0" absoluteBounds="3, 4.5, 2, 0.75">
+      <featureMoniker name="/21496d32-7b79-4373-a685-347f2d4cf4a8/Module 1" />
+    </featureShape>
+    <featureConnector Id="0b76f438-4232-4cf2-8548-3855307285da" edgePoints="[(5.625 : 1.625); (4.01961678832117 : 4.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="2b82ead4-1f7a-40d7-9fd9-7d5ff53ba244">
+      <nodes>
+        <featureShapeMoniker Id="bdca30e4-db8c-445f-b1f8-fd5ee704ed92" />
+        <featureShapeMoniker Id="de239747-2923-40a0-9531-6e2e96fb91f0" />
+      </nodes>
+    </featureConnector>
+    <featureShape Id="ff51aac1-f582-4ff7-b3f4-2199c8735d98" absoluteBounds="8.125, 4.625, 2, 0.75">
+      <featureMoniker name="/21496d32-7b79-4373-a685-347f2d4cf4a8/Module 2" />
+    </featureShape>
+    <featureConnector Id="e33fc1b6-d3ee-451a-8f98-0f460e00f91b" edgePoints="[(7.625 : 1.625); (9.26136363636364 : 4.625)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="2b82ead4-1f7a-40d7-9fd9-7d5ff53ba244">
+      <nodes>
+        <featureShapeMoniker Id="bdca30e4-db8c-445f-b1f8-fd5ee704ed92" />
+        <featureShapeMoniker Id="ff51aac1-f582-4ff7-b3f4-2199c8735d98" />
+      </nodes>
+    </featureConnector>
+  </nestedChildShapes>
+</extendedFeatureModelsDiagram>
