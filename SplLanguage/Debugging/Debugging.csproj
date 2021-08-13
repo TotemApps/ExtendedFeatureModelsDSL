@@ -44,6 +44,10 @@
       <SubType>
       </SubType>
     </None>
+    <None Include="MultitenantSaaSChat.SplLanguage" />
+    <None Include="MultitenantSaaSChat.SplLanguage.diagram">
+      <DependentUpon>MultitenantSaaSChat.SplLanguage</DependentUpon>
+    </None>
     <None Include="DebugTest.json">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

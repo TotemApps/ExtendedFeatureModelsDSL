@@ -10,8 +10,8 @@
             "id": "126fa3c4-31ad-4c46-92da-569c1eee78ae",
             "label":"Mini Store Dotnet",
             "name": "MiniStoreDotnetModel",
-            "included": "True",
-            "type": "Abstract"
+            "included": "False",
+            "type": "Root"
         },
         {
             "id": "9b6b319c-50e5-4bfd-8a97-5b4fc7efb0fa",

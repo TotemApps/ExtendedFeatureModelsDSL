@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<featureModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5d966b41-24ab-4c3e-8462-2eb90ee8a388" xmlns="http://schemas.microsoft.com/dsltools/SplLanguage">
+  <elements>
+    <featureElement Id="0a52e3de-6ca5-4297-9cc5-36e06f294b00" name="RootFeature" included="false" type="Root" label="Mutitenant SaaS Chat">
+      <sourceOptionalFeatureElement>
+        <featureElementMoniker name="/5d966b41-24ab-4c3e-8462-2eb90ee8a388/WebClientFeature" />
+        <featureElementMoniker name="/5d966b41-24ab-4c3e-8462-2eb90ee8a388/AndroidAppFeature" />
+        <featureElementMoniker name="/5d966b41-24ab-4c3e-8462-2eb90ee8a388/IosAppFeature" />
+      </sourceOptionalFeatureElement>
+      <sourceMandatoryFeatureElement>
+        <featureElementMandatoryReferencesFeatureElement Id="cdaad910-c23d-4854-9ff1-f7df1785f22a">
+          <featureElementMoniker name="/5d966b41-24ab-4c3e-8462-2eb90ee8a388/SigUpAppFeature" />
+        </featureElementMandatoryReferencesFeatureElement>
+        <featureElementMandatoryReferencesFeatureElement Id="de0aa7c8-b7b1-4d7b-970a-6d206093d3f3">
+          <featureElementMoniker name="/5d966b41-24ab-4c3e-8462-2eb90ee8a388/ProviderAdminConsoleApp" />
+        </featureElementMandatoryReferencesFeatureElement>
+        <featureElementMandatoryReferencesFeatureElement Id="7e91fbfd-45c8-4ebe-b070-a0f0c507ad74">
+          <featureElementMoniker name="/5d966b41-24ab-4c3e-8462-2eb90ee8a388/AutServiceFeature" />
+        </featureElementMandatoryReferencesFeatureElement>
+        <featureElementMandatoryReferencesFeatureElement Id="e679a62a-0609-4c19-a602-5cc21f4b97a5">
+          <featureElementMoniker name="/5d966b41-24ab-4c3e-8462-2eb90ee8a388/WebRtcServiceFeature" />
+        </featureElementMandatoryReferencesFeatureElement>
+        <featureElementMandatoryReferencesFeatureElement Id="57491d8c-4fb9-417d-9528-507ce18a51f0">
+          <featureElementMoniker name="/5d966b41-24ab-4c3e-8462-2eb90ee8a388/SecurityServiceFeature" />
+        </featureElementMandatoryReferencesFeatureElement>
+      </sourceMandatoryFeatureElement>
+    </featureElement>
+    <featureElement Id="90daa8eb-38de-4ff3-a5e3-e4fee3e0249d" name="WebClientFeature" included="true" type="Abstract" label="Web Client App" />
+    <featureElement Id="d9ded93c-0c32-4514-b1f4-5e19e5b64289" name="AndroidAppFeature" included="true" type="Concrete" label="Android App" />
+    <featureElement Id="f3394876-ded4-4993-a286-743ebe643a89" name="IosAppFeature" included="true" type="Abstract" label="IOS App" />
+    <featureElement Id="bfa09979-4227-467a-8d39-dc8bb24c2fab" name="AutServiceFeature" included="true" type="Concrete" label="Authentication Service" />
+    <featureElement Id="5a2bedf1-1e0f-474b-b17d-73a03f76587c" name="SigUpAppFeature" included="true" type="Abstract" label="Sign Up App" />
+    <featureElement Id="6f2fdbee-5879-4f23-b7fb-e0e64839fdf5" name="WebRtcServiceFeature" included="true" type="Abstract" label="Communication Service" />
+    <featureElement Id="dd936650-cdb8-40e7-a50d-dbc983e8c3e1" name="SecurityServiceFeature" included="true" type="Concrete" label="Security Service" />
+    <featureElement Id="52d4c52e-b902-4399-baea-4ec22dbaf396" name="ProviderAdminConsoleApp" included="true" type="Concrete" label="Admin Console App" />
+  </elements>
+</featureModel>
