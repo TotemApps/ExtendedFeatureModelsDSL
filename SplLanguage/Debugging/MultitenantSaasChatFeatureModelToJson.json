@@ -1,0 +1,73 @@
+﻿
+{
+    "$schema":"file:d:/FuentesTFS/TotemApps/MiniStoreDotnet/Models/Feature Models/ExtendedFeatureModelScheme.json",
+    "version": "",
+    "name":"",
+    "id":"5d966b41-24ab-4c3e-8462-2eb90ee8a388",
+    "description":"",
+    "features":[
+        {
+            "id": "0a52e3de-6ca5-4297-9cc5-36e06f294b00",
+            "label":"Mutitenant SaaS Chat",
+            "name": "RootFeature",
+            "included": "False",
+            "type": "Root"
+        },
+        {
+            "id": "90daa8eb-38de-4ff3-a5e3-e4fee3e0249d",
+            "label":"Web Client App",
+            "name": "WebClientFeature",
+            "included": "True",
+            "type": "Abstract"
+        },
+        {
+            "id": "d9ded93c-0c32-4514-b1f4-5e19e5b64289",
+            "label":"Android App",
+            "name": "AndroidAppFeature",
+            "included": "True",
+            "type": "Concrete"
+        },
+        {
+            "id": "f3394876-ded4-4993-a286-743ebe643a89",
+            "label":"IOS App",
+            "name": "IosAppFeature",
+            "included": "True",
+            "type": "Abstract"
+        },
+        {
+            "id": "bfa09979-4227-467a-8d39-dc8bb24c2fab",
+            "label":"Authentication Service",
+            "name": "AutServiceFeature",
+            "included": "True",
+            "type": "Concrete"
+        },
+        {
+            "id": "5a2bedf1-1e0f-474b-b17d-73a03f76587c",
+            "label":"Sign Up App",
+            "name": "SigUpAppFeature",
+            "included": "True",
+            "type": "Abstract"
+        },
+        {
+            "id": "6f2fdbee-5879-4f23-b7fb-e0e64839fdf5",
+            "label":"Communication Service",
+            "name": "WebRtcServiceFeature",
+            "included": "True",
+            "type": "Abstract"
+        },
+        {
+            "id": "dd936650-cdb8-40e7-a50d-dbc983e8c3e1",
+            "label":"Security Service",
+            "name": "SecurityServiceFeature",
+            "included": "True",
+            "type": "Concrete"
+        },
+        {
+            "id": "52d4c52e-b902-4399-baea-4ec22dbaf396",
+            "label":"Admin Console App",
+            "name": "ProviderAdminConsoleApp",
+            "included": "True",
+            "type": "Concrete"
+        }
+    ]
+}
